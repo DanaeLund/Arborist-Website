@@ -73,7 +73,7 @@ label {
     justify-content: space-between;
     min-height: 100vh;
 
-    background-image:linear-gradient(to bottom, var(--transparent), var(--main-transparent) , var(--main) 90%), url(/images/julian-hero-bg-img.png);
+    background-image:linear-gradient(to bottom, var(--transparent), var(--main-transparent) , var(--main) 90%), url(./images/julian-hero-bg-img.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
