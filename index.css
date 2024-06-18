@@ -756,7 +756,6 @@ label {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover; 
-        
     }
 
     .hero-section .header  {
@@ -843,7 +842,7 @@ label {
         color: var(--main);
         font-weight: bold; 
     }
-    
+
     /* SERVICES SECTION */
     .services-section {
         display: none;
@@ -860,7 +859,6 @@ label {
 
 
     /* CONTACT US SECTION */
-
     .contact-us-section .text-box img {   
         display: none;
         width: 100%;
@@ -898,22 +896,4 @@ label {
         padding-top: 5rem;
         padding-bottom: 3rem;
     }
-}
-/* 601px Version */
-@media (min-width: 601px){
-    /* Hide Web Nav Bar, switch to Burger Menu */
-    
-}
-/* 768px Version */
-@media (min-width: 768px){
-    
-}
-/* 992px Version */
-@media (min-width: 992px){
-    
-}
-/* 1200px Version */
-@media (min-width: 1200px){
-    
-    
 }
