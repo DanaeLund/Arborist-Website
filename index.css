@@ -732,6 +732,15 @@ label {
     padding-block: 0.5rem;
 }
 
+.footer .footer-section-4 {
+    display: flex;
+}
+
+.footer .footer-section-4 a{
+    text-decoration: none;
+    color: var(--emergency);
+}
+
 /* Total scrollbar width */
 ::-webkit-scrollbar {
     width: 10px; /* Width of the vertical scrollbar */
