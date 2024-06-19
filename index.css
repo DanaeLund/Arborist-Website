@@ -158,7 +158,6 @@ label {
     align-items: center;
     text-align: center;
     
-    animation: pulse-slow 10s infinite;
     transition: all 0.5s;
 }
 
@@ -662,7 +661,7 @@ label {
     padding: 1rem 3rem;
     border-radius: 0.5rem;
     
-    animation: pulse 2.5s infinite;
+    animation: color-change 2.5s infinite;
 }
 
 .contact-form .cta-btn:hover {
@@ -938,35 +937,20 @@ label {
     }
 }
 
-@keyframes pulse {
+@keyframes color-change {
     0% {
-        transform: scale(1);
         color: var(--white);
         background-color: var(--main);
         border: 1px solid #fff;
     }
     25%, 75% {
-        transform: scale(1.1);
         color: var(--main);
         background-color: var(--emergency);
         border: 1px solid var(--emergency);
     }
     100% {
-        transform: scale(1);
         color: var(--white);
         background-color: var(--main);
         border: 1px solid #fff;
-    }
-}
-
-@keyframes pulse-slow {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-    }
-    100% {
-        transform: scale(1);
     }
 }
