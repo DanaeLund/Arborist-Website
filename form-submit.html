@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesignsByMeganLund</title>
+    <link rel="icon" href="./images/logo-2.svg" type="image/x-icon">
+    <link rel="stylesheet" href="form-sumbit.css">
+</head>
+
+<body>
+    <section>
+        <img src="./images/julian-logo-2.png" alt="">
+        <div class="main-text">
+            <h1>Form Submitted Successfully!</h1>
+            <h4>Thank you! The form has been submitted successfully. We will reply to you soon!</h4>
+            <button id="backButton">Go Back</button>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('backButton').addEventListener('click', function() {
+            history.back();
+        });
+        </script>
+</body>

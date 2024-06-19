@@ -394,7 +394,7 @@
             
             <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
                 <input type="hidden" name="access_key" value="a2dff29a-92c4-4e2f-89ee-0d3a9245c73e">
-                <!-- <input type="hidden" name="redirect" value="https://google.com"> -->
+                <input type="hidden" name="redirect" value="http://127.0.0.1:5501/form-submit.html">
                 <div class="input-name-container">
                     <div class="input-container">
                         <label for="first-name">First Name</label>
@@ -408,7 +408,7 @@
 
                 <div class="input-container">
                     <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone"  required pattern="\d{10}" placeholder="123-456-7890">
+                    <input type="tel" id="phone" name="phone"  required pattern="\d{10}" placeholder="123-456-7890">
                 </div>
 
                 <div class="input-container">
@@ -509,6 +509,31 @@
             
     <!-- Place your scripts here -->
     <script src="/scripts/"></script>
+    <script>
+        document.querySelectorAll('.hero-service-buttons a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();  // Prevent the default anchor click behavior
+        
+                const targetId = this.getAttribute('href').substring(1);  // Get the target section id
+                document.getElementById(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    <script>
+        document.querySelectorAll('.navigation-links a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();  // Prevent the default anchor click behavior
+        
+                const targetId = this.getAttribute('href').substring(1);  // Get the target section id
+                document.getElementById(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
     
 </body>
 
