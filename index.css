@@ -27,6 +27,7 @@ html {
 }
 
 body {
+    position: static;
     width: 100%;
 }
 
@@ -84,7 +85,7 @@ label {
     width: 100%;
     height: 55px;
 
-    z-index: 9999;
+    z-index: 99;
 }
 
 .under-construction-section .wrapper{
@@ -141,6 +142,34 @@ label {
     animation-delay: calc(30s / 3 * (3 - 3) * -1);
 }
 
+/* RETURN TO TOP SECTION  */
+
+.return-to-top-section .button-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+
+    background-color: var(--main);
+    border-radius: 50%;
+    border: solid 2px var(--white);
+    height: 75px;
+    width: 75px;
+    margin: 2rem;
+    padding: 10px;
+}
+
+.return-to-top-section .button-container a{
+    height: 100%;
+    width: 100%;
+}
+
+.return-to-top-section .button-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
 
 /* HERO SECTION */
 .hero-section {
@@ -922,10 +951,10 @@ label {
 }
 
 .footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 3rem;
 }
 
 .footer-content p {
@@ -967,6 +996,12 @@ label {
 
 .footer .footer-section-2 li {
     padding-block: 0.5rem;
+}
+
+.footer-section-3 iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
 }
 
 .footer .footer-section-4 {
@@ -1063,6 +1098,13 @@ label {
 
     .contact-us-section .text-box img {
         display: none;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 3rem;
     }
 }
 
