@@ -73,8 +73,7 @@ section {
 
     min-height: 100vh;
 
-    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.308), var(--main-transparent) , var(--main) 90%), url(./images/julian-hero-bg-img.png);
-    background-position: center;
+    background-image:linear-gradient(to bottom, var(--main), rgba(0, 0, 0, 0.25) 90%), url(./images/julian-hero-bg-img.png);
     background-repeat: no-repeat;
     background-size: cover; 
 }
