@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
 
@@ -13,15 +14,6 @@
     <meta name="copyright" content="Your Company Name">
 
     <meta name="robots" content="index, follow">
-
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
-    <!-- Disable if you want Google Maps -->
-
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="DENY">
-    <meta name="referrer" content="no-referrer">
-    <meta http-equiv="Permissions-Policy" content="geolocation=(self), microphone=()">
-    <meta http-equiv="X-Permitted-Cross-Domain-Policies" content="none">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Sunshine Coast Arborist Services">
@@ -56,13 +48,13 @@
 </head>
 
 <body>
-    <!-- <section class="under-construction-section">
+    <section class="under-construction-section">
         <div class="wrapper">
             <div class="under-construction-txt text-1"><p>Website Under Construction</p></div>
             <div class="under-construction-txt text-2"><p>Website Under Construction</p></div>
             <div class="under-construction-txt text-3"><p>Website Under Construction</p></div>
         </div>
-    </section> -->
+    </section>
 
     <section class="return-to-top-section">
         <div class="button-container">
@@ -72,18 +64,40 @@
         </div>
     </section>
 
-     <section id="home" class="hero-section">
+    <section id="home" class="hero-section">
         <div class="header">
             <div class="logo">
                 <img src="./images/julian-logo.svg" alt="">
             </div>
-                <ul class="navigation-links">
+            <ul class="navigation-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about-us">About Us</a></li>
                     <li id="services-dropdown">
                         <a href="#services">Services</a>
                         <ul class="dropdown-menu">
-                            <li><a href="/service-1">Tree Care</a></li>
+                            <li><a href="/tree-care.html">Tree Care</a></li>
+                            <li><a href="/landscape-maintenance.html">Landscape Maintenance</a></li>
+                            <li><a href="/hardscape-installation.html">Hardscape Installation</a></li>
+                            <li><a href="/farm-property-caretaking.html">Farm & Property Caretaking</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                    <li><a class="emergency" href="#contact-us"">Emergency</a></li>
+            </ul>
+        </div>
+
+        <div class="header-2">
+            <img class="header-img" src="./images/julian-logo.svg" alt="">
+            <button class="burger-menu-button"><img src="./images/menu-icon-white.svg" alt=""></button>
+            <div class="burger-menu-popout">
+                <button class="close-menu-button"><img src="./images/close-menu-button.svg" alt="Close button for the menu"></button>
+                <ul class="navigation-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li class="services-dropdown-menu">
+                        <a href="#services">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#tree-care.html">Tree Care</a></li>
                             <li><a href="/service-2">Landscape Maintenance</a></li>
                             <li><a href="/service-3">Hardscape Installation</a></li>
                             <li><a href="/service-4">Farm & Property Caretaking</a></li>
@@ -92,20 +106,23 @@
                     <li><a href="#contact-us">Contact Us</a></li>
                     <li><a class="emergency" href="#contact-us"">Emergency</a></li>
                 </ul>
+            </div>
+            
         </div>
-        <div class="header-2">
-            <img src="./images/julian-logo.svg" alt="">
-        </div>
+
         <div class="main-text">
-            <h2>Your Sunshine Coast Landcare Experts</h2>
-            <p>From Gibsons to Egmont — and every yard in between!</p>
-            <h4>How can we help you?:</h4>
+            <div class="heading-text">
+                <h2>Your Sunshine Coast Landcare Experts</h2>
+                <h3>From Gibsons to Egmont — and every yard in between!</h3>
+            </div>
+            <h3>How can we help you?:</h3>
         </div>
+
         <div class="hero-service-buttons">
-            <button class="btn"><a href="#service-1">Tree Care</a></button>
-            <button class="btn"><a href="#service-2">Landscape <br>Maintenance</a></button>
-            <button class="btn"><a href="#service-3">Hardscape <br>Installation</a></button>
-            <button class="btn"><a href="#service-4">Farm & Property <br>Caretaking</a></button>
+            <a class="cta-button" href="#service-1">Tree Care</a>
+            <a class="cta-button" href="#service-2">Landscape <br>Maintenance</a>
+            <a class="cta-button" href="#service-3">Hardscape <br>Installation</a>
+            <a class="cta-button" href="#service-4">Farm & Property <br>Caretaking</a>
         </div>
 
     </section>
@@ -114,7 +131,7 @@
         <div class="text-section">
             <h3>Meet Your Local <br> Landcare Expert</h3>
             <p>
-                This is Julian, the heart and soul behind Landcare Contracting, your go-to experts for creating stunning outdoor spaces on the Sunshine Coast of BC, Canada. 
+                Meet Julian, the heart and soul behind Landcare Contracting, your go-to experts for creating stunning outdoor spaces on the Sunshine Coast!
                 
                 <br> <br>
 
@@ -122,7 +139,7 @@
 
                 <br> <br>
 
-                At Landcare Contracting, we specialize in everything your outdoor space needs: from expert tree care and meticulous landscape maintenance to crafting inviting hardscapes and caring for rural properties and farms. 
+                At Landcare Contracting, we specialize in everything your outdoor space needs: expert tree care, precise landscape maintenance, beautifully inviting hardscapes and even caring for your rural properties and farms while you are on vacation.
 
                 <br> <br>
                 
@@ -132,9 +149,8 @@
                 
                 Join us in making your outdoor dreams a reality today!
             </p>
-
                 <!-- Optional Button if About Us Page is added. -->
-                <!-- <div class="btn">Learn More</div> -->
+                <!-- <div class="cta-button"><a href="/learn-more">Learn More</a></div> -->
         </div>
         <div class="img-section">
             <img src="./images/home-about-us-img.png" alt="an image of an arborist topping a tree">
@@ -205,7 +221,7 @@
         <h3>Satisfied Clients</h3>
         <div class="client-grid">
             <div class="client-card">
-                <div class="client-name">Jamie Folsom</div>
+                <h4>Jamie Folsom</h4>
                 <div class="client-img">
                     <img src="./images/client-1.jpg" alt="">
                 </div>
@@ -220,7 +236,7 @@
             </div>
 
             <div class="client-card">
-                <div class="client-name">Ryan Hughes</div>
+                <h4>Ryan Hughes</h4>
                 <div class="client-img">
                     <img src="./images/client-2.jpg" alt="">
                 </div>
@@ -235,7 +251,7 @@
             </div>
 
             <div class="client-card">
-                <div class="client-name">David Lund</div>
+                <h4>David Lund</h4>
                 <div class="client-img">
                     <img src="./images/client-3.jpg" alt="">
                 </div>
@@ -291,12 +307,10 @@
                                 Count on us to ensure your trees not only look great but also increase the overall beauty and functionality of
                                 your outdoor space.
                                 </p>
-                                </div>
-                                <div class="cta-btn">
-                                    <button class="btn"><a href="">Learn More</a></button>
-                                </div>
-                                </div>
-                                </div>
+                            </div>
+                        <a class="cta-button" href="#">Learn More</a>
+                    </div>
+                </div>
             </div>
 
             <div id="service-2" class="services-card-container">
@@ -339,11 +353,9 @@
                                     Treat yourself—because your landscape deserves nothing less than perfection.
                                 </p>
                                 </div>
-                                <div class="cta-btn">
-                                    <button class="btn"><a href="">Learn More</a></button>
-                                </div>
-                                </div>
-                                </div>
+                        <a class="cta-button" href="#">Learn More</a>
+                    </div>
+                </div>
             </div>
 
             <div id="service-3" class="services-card-container">
@@ -380,12 +392,10 @@
                             <p>
                                 Our craftsmanship transforms outdoor spaces into functional works of art, designed to endure.
                             </p>
-                            </div>
-                            <div class="cta-btn">
-                                <button class="btn"><a href="">Learn More</a></button>
-                            </div>
-                            </div>
-                            </div>
+                        </div>
+                        <a class="cta-button" href="#">Learn More</a>
+                    </div>
+                </div>
             </div>
 
             <div id="service-4" class="services-card-container">
@@ -423,14 +433,11 @@
                                 Let us partner with you to create a thriving, harmonious environment where your dreams of countryside living come to
                                 life. Even while you are away.
                                 </p>
-                                </div>
-                                <div class="cta-btn">
-                                    <button class="btn"><a href="">Learn More</a></button>
-                                </div>
-                                </div>
-                                </div>
-                            </div>
-        </div>
+                        </div>
+                        <a class="cta-button" href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
     </section>
 
     <section id="services-mobile" class="services-section-mobile">
@@ -648,7 +655,8 @@
         <hr>
         <div class="footer-content">
             <div class="footer-section-1">
-                <p class="footer-header">Get in Touch</p>
+                <div class="content">
+                    <p class="footer-header">Get in Touch</p>
                 <ul>
                     <li>
                         <img class="icon" src="./images/location-icon.svg" alt="">
@@ -670,10 +678,12 @@
                         </p>
                     </li>
                 </ul>
+                </div>
             </div>
     
             <div class="footer-section-2">
-                <p class="footer-header">Business Hours</p>
+                <div class="content">
+                    <p class="footer-header">Business Hours</p>
                 <ul>
                     <li>
                         <p>
@@ -691,16 +701,16 @@
                         <p>Sunday <br> Closed</p>
                     </li>
                 </ul>
+                </div>
             </div>
     
             <div class="footer-section-3">
-                <div class="map">
-                    <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA_aMawa_Uec-WcExWZV0ZR9tyeWWDQY1Y&q=Gibsons,BC" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
+                <div class="content">
+                <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA_aMawa_Uec-WcExWZV0ZR9tyeWWDQY1Y&q=Gibsons,BC" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
+        <hr>
         
         <div class="footer-section-4">
             <p class="footer-copyright">Copyright © Landcare Contracting 2024 All Rights Reserved</p>
@@ -710,7 +720,7 @@
     </section>
             
     <!-- SCRIPTS -->
-    <script src="/scripts/"></script>
+    <script src="./scripts/index.js"></script>
 
     <script>
         document.querySelectorAll('.hero-service-buttons a').forEach(anchor => {
