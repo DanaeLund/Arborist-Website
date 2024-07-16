@@ -1,21 +1,19 @@
-
-
-const menuBtn = document.querySelector('.burger-menu-button');
-const menuBtnPopout = document.querySelector('.burger-menu-popout');
-const closeMenuBtn = document.querySelector('.close-menu-button');
+const MENUBTN = document.querySelector('.burger-menu-button');
+const MENUBTNPOPOUT = document.querySelector('.burger-menu-popout');
+const CLOSEMENUBTN = document.querySelector('.close-menu-button');
 
 let menuOpen = false;
 
-menuBtn.addEventListener("click", () => {
+MENUBTN.addEventListener("click", () => {
     if(!menuOpen) (
-        menuBtnPopout.style.display = "flex",
+        MENUBTNPOPOUT.style.display = "flex",
         menuOpen = true
     )
 })
 
-closeMenuBtn.addEventListener("click", () => {
+CLOSEMENUBTN.addEventListener("click", () => {
     if(menuOpen) (
-        menuBtnPopout.style.display = "none",        
+        MENUBTNPOPOUT.style.display = "none",        
         menuOpen = false
     )
 })
