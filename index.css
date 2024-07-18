@@ -525,7 +525,6 @@ label {
     text-align: start;
     padding-inline: 4rem;
     padding-top: 2rem;
-    padding-bottom: 4rem;
 }
 
 .about-section .img-section {
@@ -542,6 +541,36 @@ label {
     object-fit: cover;
     object-position: center;
     border-radius: 0.5rem;
+}
+
+.about-section .cta-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 0.5rem 0 0 0.5rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    width: 100%;
+
+    text-align: center;
+    color: var(--main);
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: all 0.25s;
+}
+
+.about-section  .cta-btn:hover {
+    color: var(--white);
+    background-color: var(--main);
+    border: 1px solid var(--white);
+    
+    transform: scale(1.1);
+    transition: all 0.25s;
 }
 
 /* WHY US SECTION */
