@@ -455,6 +455,73 @@ label {
     transition: all 0.25s;
 }
 
+/* Why Us Section - About Us Page  */
+.why-us-section {
+    background: var(--white);
+}
+
+.image-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 2rem;
+}
+
+.image-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--main);
+    box-shadow:  2px 2px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.image-card .symbol{
+    height: 100px;
+}
+
+/* Why Us Section - About Us Page  */
+.service-area {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 0 auto 4rem auto;
+    max-width: 80%;
+    border-radius: 5px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+}
+
+.service-area h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-area p {
+    color: #555;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.service-area ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.service-area ul li {
+    background-color: var(--white);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.service-area ul li strong {
+    color: var(--main);
+}
+
 /* SERVICE SECTION  */
 
 .services-section {
@@ -682,7 +749,7 @@ label {
 
 .input-name-container {
     display: flex;
-    justify-content: space-between;
+    gap: 1rem;
 }
 
 .contact-form {
@@ -742,10 +809,7 @@ label {
 
 .input-container {
     padding-bottom: 1rem;
-}
-
-.input-name-container {
-    gap: 1rem;
+    width: 100%;
 }
 
 /* FOOTER SECTION */

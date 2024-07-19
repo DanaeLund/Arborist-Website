@@ -955,6 +955,8 @@ label {
 
 /* CONTACT US SECTION */
 
+/* CONTACT US SECTION */
+
 .contact-us-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -976,6 +978,7 @@ label {
     justify-content: space-between;
     
     padding-top: 2rem;
+    padding-inline: 10%;
     height: 100%;
 }
 
@@ -1016,7 +1019,7 @@ label {
 
 .input-name-container {
     display: flex;
-    justify-content: space-between;
+    gap: 1rem;
 }
 
 .contact-form {
@@ -1076,10 +1079,7 @@ label {
 
 .input-container {
     padding-bottom: 1rem;
-}
-
-.input-name-container {
-    gap: 1rem;
+    width: 100%;
 }
 
 /* FOOTER SECTION */
