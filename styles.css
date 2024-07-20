@@ -611,16 +611,6 @@ label {
     padding-inline: 10%;
 }
 
-.why-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem
-}
-
-.why-grid .why-item {
-    padding-block: 1rem;
-}
-
 .button-container {
     width: 100%;
 }
@@ -921,10 +911,11 @@ label {
         display: none;
     }
 
-    .why-grid {
+    .image-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        column-gap: 2rem
+        row-gap: 1rem;
+        padding-block: 2rem;
     }
 
     .contact-us-section {
