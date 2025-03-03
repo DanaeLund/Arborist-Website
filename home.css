@@ -15,8 +15,24 @@
 }
 
 
-/* Website Version */
+/* Basic Styles */
+/* Text Colors */
+.white-text {
+    color: var(--white);
+}
 
+.green-text {
+    color: var(--main);
+}
+
+/* Effects */
+.transparent {
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25); ;
+}
+
+/* Website Version */
 * {
     padding: 0;
     margin: 0;
@@ -188,24 +204,20 @@ label {
     position: static;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
     width: 100%;
     height: 100%;
     min-height: 100vh;
     padding: 0;
-    padding-bottom: 5rem;
 
-    background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.5), var(--main)), url(./images/home-hero-bg-img.png);
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.5) 40%, var(--main)), url(images/trees-8836655_1280.jpg);
     background-position: top;
     background-size: cover;
 }
 
-.hero-section .header  {
-    position: relative;
-    top: 0;
-    left: 0; 
-    
+/* HEADER */
+
+.header  {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -219,7 +231,7 @@ label {
     transition: all 0.5s ease-in-out;
 }
 
-.hero-section .header:hover  {
+.header:hover  {
     background-color: var(--main);
 
     transition: all 0.2s ease-in-out;
@@ -235,7 +247,7 @@ label {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
+    width: 40%;
 }
 
 .hero-section .header .navigation-links > li{
@@ -385,6 +397,7 @@ label {
     align-items: center;
     justify-content: center;
     gap: 5rem;
+    margin-top: 5rem;
 }
 
 .hero-section .main-text .heading-text {
@@ -403,7 +416,7 @@ label {
     align-items: center;
 
     padding-inline: 10%;
-    padding-top: 2rem;
+    margin-top: 5rem;
 }
 
 .hero-section .hero-service-buttons .cta-button {
@@ -411,8 +424,6 @@ label {
     justify-content: center;
     align-items: center;
 
-    background-color: var(--white);
-    border: 1px solid var(--white);
     border-radius: 0.5rem;
     padding: 1rem;
     height: 100%;
@@ -420,20 +431,17 @@ label {
     width: 100%;
 
     text-align: center;
-    color: var(--main);
+    color: var(--white);
     font-size: 1.25rem;
-    font-weight: bold;
     text-decoration: none;
 
     transition: all 0.25s;
 }
 
 .hero-section .hero-service-buttons .cta-button:hover {
-    color: var(--white);
-    background-color: var(--main);
+    color: var(--main);
+    background-color: var(--white);
     border: 1px solid var(--white);
-   
-    color: var(--white);
     
     transform: scale(1.1);
     transition: all 0.25s;
