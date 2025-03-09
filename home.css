@@ -184,7 +184,7 @@ label {
     position: fixed;
     bottom: 0;
     right: 0;
-    z-index: 9999;
+    z-index: 999;
 
     background-color: var(--main);
     border-radius: 50%;
@@ -215,7 +215,7 @@ label {
 
     width: 100%;
     height: 100%;
-    max-height: 100vh;
+    min-height: 100vh;
     padding: 0;
 
     /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 45%, rgba(0, 0, 0, 0.45)), url(images/trees-8836655_1280.jpg); */
