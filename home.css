@@ -55,7 +55,6 @@ body {
 section {
     padding-inline: 10%;
     font-family: "DM Sans", sans-serif;
-    color: var(--white);
 }
 
 h2 {
@@ -73,6 +72,12 @@ h3 {
 h4 {
     font-weight: var(--font-weight);
     font-size: 2rem;
+    text-align: center;
+}
+
+h5 {
+    font-weight: normal;
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -418,6 +423,8 @@ label {
     display: flex;
 }
 
+/* NON-HEADER */
+
 .hero-section .main-text {
     display: flex;
     flex-direction: column;
@@ -703,7 +710,7 @@ label {
 
 .services-section .pageBreak {
     margin-top: 2rem;
-    margin-bottom: -20rem;
+    margin-bottom: -18rem;
 }
 
 .services-section h3 {
