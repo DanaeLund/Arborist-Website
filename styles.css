@@ -475,6 +475,10 @@ label {
     font-size: 0.9rem;
 }
 
+.hero-section .header-2 .burger-menu-popout .navigation-links .services-dropdown-menu .dropdown-menu a {
+    padding: 2rem 1rem;
+}
+
 .hero-section .header-2 .burger-menu-popout .navigation-links .services-dropdown-menu:hover .dropdown-menu {
     display: flex;
 }
@@ -768,11 +772,6 @@ label {
 
 /* CONTACT US SECTION */
 .contact-us-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding-block: 2rem;
     background-color: var(--main);
 }
 

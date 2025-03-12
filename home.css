@@ -407,16 +407,26 @@ label {
     z-index: 999;
 }
 
+.hero-section .header-2 .burger-menu-popout .navigation-links>li {
+    padding: 1rem 1rem;
+    margin-inline: -1rem;
+}
+
 .hero-section .header-2 .burger-menu-popout .navigation-links .services-dropdown-menu .dropdown-menu {
     display: none;
     flex-direction: column;
-    gap: 1rem;
+    gap: 3rem;
     padding-left: 1rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .hero-section .header-2 .burger-menu-popout .navigation-links .services-dropdown-menu .dropdown-menu li a {
     font-size: 0.9rem;
+}
+
+.hero-section .header-2 .burger-menu-popout .navigation-links .services-dropdown-menu a {
+    padding: 1rem 1rem;
+    margin-inline: -1rem;
 }
 
 .hero-section .header-2 .burger-menu-popout .navigation-links .services-dropdown-menu:hover .dropdown-menu {
