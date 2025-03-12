@@ -779,15 +779,15 @@ label {
     /* display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem; */
+    gap: 3rem;
 
     padding-block: 2rem;
-    padding-top: 5rem;
+    padding-top: 5rem; */
     background-color: var(--main);
     overflow: hidden;
 }
 
-.contact-us-section h3 {
+/* .contact-us-section h3 {
     padding-block: 3rem;
 }
 
@@ -899,7 +899,7 @@ label {
 .input-container {
     padding-bottom: 1rem;
     width: 100%;
-}
+} */
 
 /* FOOTER SECTION */
 
