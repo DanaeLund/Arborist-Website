@@ -163,6 +163,8 @@ label {
     z-index: 0;
 }
 
+/* LANDSCAPE HERO */
+
 .landscape-hero {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 45%, rgba(0, 0, 0, 0.45)), url(./images/landscape-service-img-1.jpg);
     background-position: top;
@@ -180,11 +182,13 @@ label {
     margin-bottom: -18rem;
 }
 
+/* HARDSCAPE HERO */
+
 .hardscape-hero {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 45%, rgba(0, 0, 0, 0.45)), url(./images/hardscape-service-img-2.jpg);
-    background-position: top;
     background-size: cover;
-    background-position: top;
+    background-repeat: no-repeat;
+    background-position-y: -100rem;
 }
 
 .hardscape-hero .main-text{
@@ -196,6 +200,8 @@ label {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, var(--main) 50%);
     margin-bottom: -18rem;
 }
+
+/* CARETAKING HERO */
 
 .caretaking-hero {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 45%, rgba(0, 0, 0, 0.45)), url(./images/caretaking-service-img-2.jpg);
