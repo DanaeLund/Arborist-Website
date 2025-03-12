@@ -1013,11 +1013,6 @@ label {
         padding-block: 2rem;
     }
 
-    .contact-us-section {
-        grid-template-columns: repeat(1, 1fr);
-        row-gap: 0;
-    }
-
     .contact-us-section .text-box img {
         display: none;
     }
@@ -1105,10 +1100,6 @@ label {
 
     .service-grid .service-img {
         display: none;
-    }
-
-    .contact-us-section {
-        grid-template-columns: repeat(1, 1fr);
     }
 
     .contact-us-section .text-box img {
