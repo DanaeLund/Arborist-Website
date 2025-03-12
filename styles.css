@@ -248,15 +248,7 @@ label {
 }
 
 .contact-us-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    gap: 3rem;
-    padding-block: 2rem;
     background-color: var(--main);
-    overflow: hidden;
-
 }
 
 /* ABOUT US HERO */

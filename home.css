@@ -994,11 +994,6 @@ label {
 
 /* CONTACT US SECTION */
 .contact-us-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding-block: 2rem;
     background-color: var(--main);
 }
 
