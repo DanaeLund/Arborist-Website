@@ -1283,10 +1283,10 @@ label {
         grid-template-rows: repeat(4, 1fr);
     }
 
-    .contact-us-section {
+    /* .contact-us-section {
         grid-template-columns: repeat(1, 1fr);
         row-gap: 0;
-    }
+    } */
 
     .contact-us-section .text-box img {
         display: none;
@@ -1395,9 +1395,9 @@ label {
         grid-template-rows: repeat(2, 1fr);
     }
 
-    .contact-us-section {
+    /* .contact-us-section {
         grid-template-columns: repeat(1, 1fr);
-    }
+    } */
 
     .contact-us-section .text-box img {
         display: none;
