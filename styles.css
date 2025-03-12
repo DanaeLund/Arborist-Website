@@ -776,11 +776,10 @@ label {
 
 /* CONTACT US SECTION */
 .contact-us-section {
-    /* display: flex;
+    display: flex;
     align-items: center;
-    justify-content: center; */
+    justify-content: center;
 
-    gap: 3rem;
     padding-block: 2rem;
     background-color: var(--main);
 }
@@ -1022,10 +1021,10 @@ label {
         padding-block: 2rem;
     }
 
-    /* .contact-us-section {
+    .contact-us-section {
         grid-template-columns: repeat(1, 1fr);
         row-gap: 0;
-    } */
+    }
 
     .contact-us-section .text-box img {
         display: none;
@@ -1116,9 +1115,9 @@ label {
         display: none;
     }
 
-    /* .contact-us-section {
+    .contact-us-section {
         grid-template-columns: repeat(1, 1fr);
-    } */
+    }
 
     .contact-us-section .text-box img {
         display: none;
