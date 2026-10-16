@@ -163,10 +163,8 @@ label {
     z-index: 0;
 }
 
-/* LANDSCAPE HERO */
-
 .landscape-hero {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 45%, rgba(0, 0, 0, 0.45)), url(./images/landscape-service-img-1.jpg);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 45%, rgba(0, 0, 0, 0.45)), url(/imgs/landscape-service-img-1.jpg);
     background-position: top;
     background-size: cover;
     background-position: top;
@@ -182,13 +180,11 @@ label {
     margin-bottom: -18rem;
 }
 
-/* HARDSCAPE HERO */
-
 .hardscape-hero {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 45%, rgba(0, 0, 0, 0.45)), url(./images/hardscape-service-img-2.jpg);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 45%, rgba(0, 0, 0, 0.45)), url(/imgs/hardscape-service-img-2.jpg);
+    background-position: top;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: -100rem;
+    background-position: top;
 }
 
 .hardscape-hero .main-text{
@@ -201,10 +197,8 @@ label {
     margin-bottom: -18rem;
 }
 
-/* CARETAKING HERO */
-
 .caretaking-hero {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 45%, rgba(0, 0, 0, 0.45)), url(./images/caretaking-service-img-2.jpg);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 45%, rgba(0, 0, 0, 0.45)), url(/imgs/caretaking-service-img-2.jpg);
     background-position: top;
     background-size: cover;
     background-position: top;
@@ -223,7 +217,7 @@ label {
 /* TREE CARE HERO */
 
 .tree-care-hero {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 45%, rgba(0, 0, 0, 0.45)), url(./images/tree-care-service-img-1.png);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 45%, rgba(0, 0, 0, 0.45)), url(/imgs/tree-care-service-img-1.png);
     background-position: top;
     background-size: cover;
     background-position: top;
@@ -263,7 +257,7 @@ label {
     justify-content: none;
     align-items: center;
 
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 45%, rgba(0, 0, 0, 0.45)), url(./images/home-about-us-img.png);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 45%, rgba(0, 0, 0, 0.45)), url(/imgs/home-about-us-img.png);
     background-position: top;
     background-size: cover;
     background-position: top;
@@ -481,10 +475,6 @@ label {
     font-size: 0.9rem;
 }
 
-.hero-section .header-2 .burger-menu-popout .navigation-links .services-dropdown-menu .dropdown-menu a {
-    padding: 2rem 1rem;
-}
-
 .hero-section .header-2 .burger-menu-popout .navigation-links .services-dropdown-menu:hover .dropdown-menu {
     display: flex;
 }
@@ -686,6 +676,8 @@ label {
     font-size: 1.25rem;
 
     transition: all 0.25s;
+    max-width: 15rem;
+    min-height: 7rem;
 }
 
 .cta-button:hover {
@@ -710,6 +702,7 @@ label {
     text-shadow: none;
     text-align: center;
     font-size: 1.25rem;
+    max-width: 15rem;  
 
     transition: all 0.25s;
 }
@@ -778,6 +771,11 @@ label {
 
 /* CONTACT US SECTION */
 .contact-us-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-block: 2rem;
     background-color: var(--main);
 }
 
@@ -905,7 +903,7 @@ label {
 
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
     gap: 3rem;
 }
@@ -950,7 +948,7 @@ label {
 
 .footer .footer-tail {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
@@ -993,12 +991,14 @@ label {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         row-gap: 1rem;
+        margin: 0 auto;
     }
 
     .tree-care-hero .hero-service-buttons {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         row-gap: 1rem;
+        margin: 0 auto;
     }
     
     .service-grid {
@@ -1016,6 +1016,11 @@ label {
         grid-template-columns: repeat(1, 1fr);
         row-gap: 1rem;
         padding-block: 2rem;
+    }
+
+    .contact-us-section {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 0;
     }
 
     .contact-us-section .text-box img {
@@ -1087,14 +1092,16 @@ label {
 
     .hero-service-buttons {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         row-gap: 1rem;
+        margin: 0 auto;
     }
 
     .tree-care-hero .hero-service-buttons {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         row-gap: 1rem;
+        margin: 0 auto;
     }
 
     .service-grid {
@@ -1107,6 +1114,10 @@ label {
         display: none;
     }
 
+    .contact-us-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     .contact-us-section .text-box img {
         display: none;
     }
@@ -1117,7 +1128,7 @@ label {
 
     .footer-content {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 3rem;
     }
 

@@ -184,7 +184,7 @@ label {
     position: fixed;
     bottom: 0;
     right: 0;
-    z-index: 999;
+    z-index: 9999;
 
     background-color: var(--main);
     border-radius: 50%;
@@ -217,8 +217,7 @@ label {
     height: 100%;
     min-height: 100vh;
     padding: 0;
-
-    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 45%, rgba(0, 0, 0, 0.45)), url(images/trees-8836655_1280.jpg); */
+/*  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 45%, rgba(0, 0, 0, 0.45)), url(/imgs/trees-8836655_1280.jpg); */
     background-position: top;
     background-size: cover;
     overflow: hidden;
@@ -226,6 +225,7 @@ label {
 
 .heroVideoHome {
     position: absolute;
+    top: 0;
     filter: blur(5px) brightness(65%);
     width: 100%;
     z-index: -1;
@@ -407,26 +407,16 @@ label {
     z-index: 999;
 }
 
-.hero-section .header-2 .burger-menu-popout .navigation-links>li {
-    padding: 1rem 1rem;
-    margin-inline: -1rem;
-}
-
 .hero-section .header-2 .burger-menu-popout .navigation-links .services-dropdown-menu .dropdown-menu {
     display: none;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1rem;
     padding-left: 1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .hero-section .header-2 .burger-menu-popout .navigation-links .services-dropdown-menu .dropdown-menu li a {
     font-size: 0.9rem;
-}
-
-.hero-section .header-2 .burger-menu-popout .navigation-links .services-dropdown-menu a {
-    padding: 1rem 1rem;
-    margin-inline: -1rem;
 }
 
 .hero-section .header-2 .burger-menu-popout .navigation-links .services-dropdown-menu:hover .dropdown-menu {
@@ -473,6 +463,8 @@ label {
     text-shadow: none;
     text-align: center;
     font-size: 1.25rem;
+    max-width: 15rem;
+    min-height: 7rem;
 }
 
 .cta-button:hover {
@@ -1005,6 +997,10 @@ label {
 /* CONTACT US SECTION */
 .contact-us-section {
     background-color: var(--main);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 4rem;
 }
 
 .contact-us-section h3 {
@@ -1130,7 +1126,7 @@ label {
 
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
     gap: 3rem;
 }
@@ -1167,15 +1163,9 @@ label {
     text-decoration: underline;
 }
 
-.footer-map {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .footer .footer-tail {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
@@ -1208,7 +1198,7 @@ label {
 
     /* HERO SECTION */
     .hero-section {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 45%, rgba(0, 0, 0, 0.45)), url(images/trees-8836655_1280.jpg);
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 45%, rgba(0, 0, 0, 0.45)), url(/imgs/trees-8836655_1280.jpg);
     }
 
     .heroVideoHome {
@@ -1287,6 +1277,14 @@ label {
         grid-template-rows: repeat(4, 1fr);
     }
 
+    .contact-us-section {
+    background-color: var(--main);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+}
+
     .contact-us-section .text-box img {
         display: none;
     }
@@ -1304,7 +1302,7 @@ label {
     .footer-content {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         gap: 1rem;
     }
 
@@ -1317,7 +1315,7 @@ label {
 
 @media screen and (min-width: 721px) and (max-width: 790px){
     .hero-section {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 45%, rgba(0, 0, 0, 0.45)), url(images/trees-8836655_1280.jpg);
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 45%, rgba(0, 0, 0, 0.45)), url(/imgs/trees-8836655_1280.jpg);
     }
 
     .heroVideoHome {
@@ -1394,6 +1392,9 @@ label {
         grid-template-rows: repeat(2, 1fr);
     }
 
+    .contact-us-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
 
     .contact-us-section .text-box img {
         display: none;
@@ -1411,7 +1412,7 @@ label {
 
     .footer-content {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 3rem;
     }
 }
